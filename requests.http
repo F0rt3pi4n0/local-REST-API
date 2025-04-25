@@ -1,0 +1,21 @@
+### Pobierz wszystkie zadania
+GET http://localhost:3000/todos
+
+### Dodaj nowe zadanie
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+  "title": "Kupić mleko"
+}
+
+### Zmień status zadania na ukończone
+PUT http://localhost:3000/todos/4
+Content-Type: application/json
+
+{
+  "completed": false
+}
+
+### Usuń zadanie
+DELETE http://localhost:3000/todos/5

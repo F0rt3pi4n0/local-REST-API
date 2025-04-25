@@ -1,0 +1,30 @@
+Prosta aplikacja ToDo API
+
+Aplikacja służy do:
+- pobierania wszystkich zadań,
+- pobierania konkretnego zadania po numerze ID,
+- dodawania, usuwania lub edytowania zadań,
+- zmiany statusu zadań.
+
+Technologie i narzędzia w aplikacji:
+- Node.js - środowisko do uruchomienia aplikacji poza przeglądarką,
+- Express.js - framework do tworzenia backendowych API w Node.js,
+- REST API - interfejs komunikacyjny oparty o metody HTTP: 
+    - GET,
+    - POST,
+    - PUT,
+    - DELETE.
+- Supertest - biblioteka do testowania endpointów HTTP,
+- Jest - framework do pisania testów Javascript,
+- JSON jako baza danych - dane są przechowywane i zapisywane w pliku JSON.
+
+Struktura działania:
+1. Dane przechowywane w lokalnym pliku .json,
+2. Serwer Express udostępnia API, które modyfikuje te dane.
+3. Testy sprawdzają poprawność funkcjonalności API.
+
+Testy pokrywają:
+- poprawność działania endpointów,
+- odpowiednie kody statusów (200, 204, 404 itd.),
+- obecność dokonanych zmian,
+- obecność oczekiwanych zmian.
